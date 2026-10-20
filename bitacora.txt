@@ -1,0 +1,11 @@
+url: https://cautious-chainsaw-wv5vgrpqr99gf5ppv-5500.app.github.dev/
+protocolo: https://
+host: cautious-chainsaw-wv5vgrpqr99gf5ppv-5500.app.github.dev
+puerto: 5500
+ruta: /index.html
+metodo: get
+estado: 200ok
+/promociones: 404notfound
+html: es la estructura de la pagina, como las bigas y columnas de una casa, donde cuales son los titulos, parrafos imagenes y enlaces.
+css: se encarga de la parte visual, como se ve la pagina o como muestra toda la informacion de la pagina.
+javascrip: es el funcionamiento o interaccion de la pagina, la parte donde agregas la logica y responde a las acciones del usuario.
