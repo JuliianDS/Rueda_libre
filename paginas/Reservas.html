@@ -39,6 +39,77 @@
                 <dd>6:00 am - 2:00 pm</dd>
             </dl>
         </section>
+        <section>
+            <h2>Formulario de Alquiler</h2>
+            <form action="" method="post" >
+                <fieldset>
+
+                    <legend>Tus Datos</legend> 
+
+                    <div>
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="cedula">Documento de Identidad</label>
+                        <input type="number" id="cedula" name="cedula" required>
+                    </div>
+                    <div>
+                        <label for="correo">Correo Electronico</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div>
+                        <label for="contacto">Numero de Contacto</label>
+                        <input type="tel" id="contacto" name="contacto" required>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+
+                    <legend>Tu Alquiler</legend>
+
+                    <div>
+                        <label for="fecha">Fecha de reserva</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div>
+                        <label for="cantidad">Cantidad de bicicletas</label>
+                        <input type="number" id="cantidad" name="cantidad_bc" min="1" max="50">
+                    </div>
+
+                    <div>
+                        <p>Tipo de bicicleta</p>
+
+                        <input type="radio" id="montaña" name="t-bici" value="montaña">
+                        <label for="montaña">Montaña</label>
+
+                        <input type="radio" id="urbana" name="t-bici" value="urbana">
+                        <label for="urbana">Urbana</label>
+
+                        <input type="radio" id="electrica" name="t-bici" value="electrica">
+                        <label for="electrica">Electrica</label>
+
+                    </div>
+                </fieldset>
+                <FIEldset>
+                    <legend>Confirmación</legend>
+
+                    <div>
+                        <label for="nota">Notas adicionales</label>
+                        <textarea name="n-especiales" id="notas" rows="4" cols="30"></textarea>
+
+                    </div>
+                    <div>
+                        <input type="checkbox" id="terminos" name="acepta_terminos" value="si" required>
+                        <label for="terminos">Aceptas los términos y condiciones</label>
+                    </div>
+
+                </FIEldset>
+
+                <button type="submit">Enviar reserva</button>
+                
+            </form>
+        </section>
         
         <footer>
             <p>&copy; 2026 Rueda Libre - Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
