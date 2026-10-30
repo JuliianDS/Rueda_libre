@@ -48,11 +48,11 @@
 
                     <div>
                         <label for="nombre">Nombre Completo</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input type="text" id="nombre" name="nombre" required minlength="3">
                     </div>
                     <div>
                         <label for="cedula">Documento de Identidad</label>
-                        <input type="number" id="cedula" name="cedula" required>
+                        <input type="number" id="cedula" name="cedula" required minlength="6" maxlength="10">
                     </div>
                     <div>
                         <label for="correo">Correo Electronico</label>
@@ -60,7 +60,7 @@
                     </div>
                     <div>
                         <label for="contacto">Numero de Contacto</label>
-                        <input type="tel" id="contacto" name="contacto" required>
+                        <input type="tel" id="contacto" name="contacto" required maxlength="10" minlength="10" value="3">
                     </div>
 
                 </fieldset>
@@ -70,25 +70,33 @@
 
                     <div>
                         <label for="fecha">Fecha de reserva</label>
-                        <input type="date" id="fecha" name="fecha" required>
+                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required >
                     </div>
                     <div>
                         <label for="cantidad">Cantidad de bicicletas</label>
-                        <input type="number" id="cantidad" name="cantidad_bc" min="1" max="50">
+                        <input type="number" id="cantidad" name="cantidad_bc" min="1" max="6" required>
                     </div>
 
                     <div>
                         <p>Tipo de bicicleta</p>
 
-                        <input type="radio" id="montaña" name="t-bici" value="montaña">
+                        <input type="radio" id="montaña" name="t-bici" value="montaña" required>
                         <label for="montaña">Montaña</label>
 
-                        <input type="radio" id="urbana" name="t-bici" value="urbana">
+                        <input type="radio" id="urbana" name="t-bici" value="urbana" required>
                         <label for="urbana">Urbana</label>
 
-                        <input type="radio" id="electrica" name="t-bici" value="electrica">
+                        <input type="radio" id="electrica" name="t-bici" value="electrica" required>
                         <label for="electrica">Electrica</label>
 
+                    </div>
+                    <div>
+                        <label for="plan">Tipo de Plan</label>
+                        <select name="plan" id="plan" required>                                                       
+                            <option >Gran Tour</option>
+                            <option >Plan en Pareja</option>
+                            <option >Plan Individual</option>
+                        </select>
                     </div>
                 </fieldset>
                 <FIEldset>
@@ -96,7 +104,7 @@
 
                     <div>
                         <label for="nota">Notas adicionales</label>
-                        <textarea name="n-especiales" id="notas" rows="4" cols="30"></textarea>
+                        <textarea name="n-especiales" id="notas" rows="4" cols="30" maxlength="300"></textarea>
 
                     </div>
                     <div>
