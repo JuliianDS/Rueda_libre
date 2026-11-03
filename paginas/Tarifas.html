@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Tarifas | Rueda Libre</title>
 </head>
+
 <body>
     <main>
         <header>
             <h1>Tarifas y Recorridos</h1>
-            <nav>
-            <ul>
-                <li><a href="../index.html">Pagina de Inicio</a></li>
-                <li><a href="Tarifas.html">Planes de Alquiler</a></li>
-                <li><a href="./Reservas.html">Reservas</a></li>
-            </ul>
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html" class="activo">Pagina de Inicio</a></li>
+                    <li><a href="Tarifas.html">Planes de Alquiler</a></li>
+                    <li><a href="./Reservas.html">Reservas</a></li>
+                </ul>
             </nav>
             <img src="../ img/images.jpeg" alt="Montando cicla">
         </header>
 
         <section id="alquiler">
             <h2>Tarifas</h2>
-            <table border="1">
+            <table>
                 <caption>Alquiler de bicicletas</caption>
                 <thead>
                     <tr>
@@ -46,14 +54,16 @@
                         <td>$70.000</td>
                     </tr>
                     <tr>
-                        <th scope="col">Electrica</th>
+                        <th scope="col" class="celda-electrica">Electrica
+                            <span class="etiqueta-nuevo">Nuevo</span>
+                        </th>
                         <td>$25.000</td>
                         <td>$70.000</td>
                         <td>$110.000</td>
                     </tr>
                 </tbody>
-            </table>        
-            
+            </table>
+
         </section>
         <br>
 
@@ -69,7 +79,7 @@
                         <th scope="col">Nivel</th>
                         <th scope="col">Precio por persona</th>
                     </tr>
-                
+
                 </thead>
                 <tbody>
                     <tr>
@@ -100,12 +110,19 @@
 
         <aside>
             <h2>Información</h2>
-            <p>Todas las tarifas incluyen <strong>casco y candado</strong>. Los recorridos salen sábados y domingos a las <strong>7:00 a. m</strong>. <br> Qué llevar: ropa cómoda, agua, protector solar y <strong>documento de identidad</strong>.</p>
+            <p>Todas las tarifas incluyen <strong>casco y candado</strong>. Los recorridos salen sábados y domingos a
+                las <strong>7:00 a. m</strong>. <br> Qué llevar: ropa cómoda, agua, protector solar y <strong>documento
+                    de identidad</strong>.</p>
             <p>Para mayor Información: <a href="../index.html#encuentranos">Visítanos o contáctanos aquí</a></p>
         </aside>
         <footer>
-            <p>&copy; 2026 Rueda Libre - Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
+            <p>&copy; 2026 Rueda Libre - Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+            </p>
         </footer>
     </main>
+    <a href="https://wa.me/573000000000" target="_blank" 
+        class="whatsapp-flotante" aria-label="Contáctanos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i></a>
 </body>
+
 </html>

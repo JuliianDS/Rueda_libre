@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Reservas | Rueda Libre</title>
 </head>
+
 <body>
     <main>
         <header>
             <h1>Reserva tu Bicicleta</h1>
-            <nav>
+            <nav id="menu">
                 <ul>
-                    <li><a href="../index.html">Pagina de Inicio</a></li>
+                    <li><a href="../index.html" class="activo">Pagina de Inicio</a></li>
                     <li><a href="../paginas/Tarifas.html">Planes de Alquiler</a></li>
-                    <li><a href="/Reservas.html">Reservas</a></li>            
+                    <li><a href="/Reservas.html">Reservas</a></li>
                 </ul>
             </nav>
             <a href="mailto:hola@ruedalibre.example">Reserva Aquí</a>
@@ -41,10 +49,10 @@
         </section>
         <section>
             <h2>Formulario de Alquiler</h2>
-            <form action="" method="post" >
+            <form action="" method="post">
                 <fieldset>
 
-                    <legend>Tus Datos</legend> 
+                    <legend>Tus Datos</legend>
 
                     <div>
                         <label for="nombre">Nombre Completo</label>
@@ -60,7 +68,7 @@
                     </div>
                     <div>
                         <label for="contacto">Numero de Contacto</label>
-                        <input type="tel" id="contacto" name="contacto" required maxlength="10" minlength="10" value="3">
+                        <input type="tel" id="contacto" name="contacto" required pattern="^3[0-9]{9}$" value="3">
                     </div>
 
                 </fieldset>
@@ -70,7 +78,8 @@
 
                     <div>
                         <label for="fecha">Fecha de reserva</label>
-                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required >
+                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required
+                            title="Del 01/11/2026 al 31/12/2026">
                     </div>
                     <div>
                         <label for="cantidad">Cantidad de bicicletas</label>
@@ -92,10 +101,10 @@
                     </div>
                     <div>
                         <label for="ruta">Tipo de Ruta</label>
-                        <select name="ruta" id="ruta" required>                                                       
-                            <option >Rios y Parques</option>
-                            <option >Sabores de Barrio</option>
-                            <option >Reto las Palmas</option>
+                        <select name="ruta" id="ruta" required>
+                            <option>Rios y Parques</option>
+                            <option>Sabores de Barrio</option>
+                            <option>Reto las Palmas</option>
                         </select>
                     </div>
                 </fieldset>
@@ -115,13 +124,19 @@
                 </FIEldset>
 
                 <button type="submit">Enviar reserva</button>
-                
+
             </form>
         </section>
-        
+
         <footer>
-            <p>&copy; 2026 Rueda Libre - Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
+            <p>&copy; 2026 Rueda Libre - Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+            </p>
         </footer>
-    </main> 
+    </main>
+    <a href="https://wa.me/573000000000" target="_blank" 
+        class="whatsapp-flotante" aria-label="Contáctanos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i></a>
+
 </body>
+
 </html>
