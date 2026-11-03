@@ -14,40 +14,19 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <h1>Reserva tu Bicicleta</h1>
-            <nav id="menu">
-                <ul>
-                    <li><a href="../index.html" class="activo">Pagina de Inicio</a></li>
-                    <li><a href="../paginas/Tarifas.html">Planes de Alquiler</a></li>
-                    <li><a href="/Reservas.html">Reservas</a></li>
-                </ul>
-            </nav>
-            
-        </header>
-        <section>
-            <h2>Horarios de Atención</h2>
-            <dl>
-                <dt>Lunes</dt>
-                <dd>7:00 am - 7:00 pm</dd>
-                <dt>Martes</dt>
-                <dd>7:00 am - 7:00 pm</dd>
-                <dt>Miercoles</dt>
-                <dd>7:00 am - 7:00 pm</dd>
-                <dt>Jueves</dt>
-                <dd>7:00 am - 7:00 pm</dd>
-                <dt>Viernes</dt>
-                <dd>7:00 am - 7:00 pm</dd>
-                <dt>Sabado</dt>
-                <dd>7:00 am - 7:00 pm</dd>
-                <dt>Domingos</dt>
-                <dd>6:00 am - 2:00 pm</dd>
-                <dt>Festivos</dt>
-                <dd>6:00 am - 2:00 pm</dd>
-            </dl>
-        </section>
-        <section>
+    <header>
+        <h1>Reserva tu Bicicleta</h1>
+        <nav >
+            <ul id="menu">
+                <li><a href="../index.html" class="activo">Pagina de Inicio</a></li>
+                <li><a href="../paginas/Tarifas.html">Planes de Alquiler</a></li>
+                <li><a href="/Reservas.html">Reservas</a></li>
+            </ul>
+        </nav>            
+    </header>
+    <main class="contenedor_grid">
+              
+        <section class="form_grid">
             <h2>Formulario de Alquiler</h2>
             <form action="" method="post">
                 <fieldset>
@@ -108,7 +87,7 @@
                         </select>
                     </div>
                 </fieldset>
-                <FIEldset>
+                <fieldset>
                     <legend>Confirmación</legend>
 
                     <div>
@@ -121,42 +100,66 @@
                         <label for="terminos">Aceptas los términos y condiciones</label>
                     </div>
 
-                </FIEldset>
+                </fieldset>
 
                 <button type="submit">Enviar reserva</button>
 
             </form>
+            <p>
+                Correo de atención al cliente:
+                <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+            </p>
+            <section class="horarios_grid">
+                <h2>Horarios de Atención</h2>
+                <dl>
+                    <dt>Lunes</dt>
+                    <dd>7:00 am - 7:00 pm</dd>
+                    <dt>Martes</dt>
+                    <dd>7:00 am - 7:00 pm</dd>
+                    <dt>Miercoles</dt>
+                    <dd>7:00 am - 7:00 pm</dd>
+                    <dt>Jueves</dt>
+                    <dd>7:00 am - 7:00 pm</dd>
+                    <dt>Viernes</dt>
+                    <dd>7:00 am - 7:00 pm</dd>
+                    <dt>Sabado</dt>
+                    <dd>7:00 am - 7:00 pm</dd>
+                    <dt>Domingos</dt>
+                    <dd>6:00 am - 2:00 pm</dd>
+                    <dt>Festivos</dt>
+                    <dd>6:00 am - 2:00 pm</dd>
+                </dl>                
+            </section>
+            
         </section>
-
-        <footer>
-
-            <div class="pie-pag-contenido">
-
-                <div class="caja" >
-                    <h2>Rueda libre</h2>
-                    <address>
-                        Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
-                    </address>
-                </div>
-
-                <div class="caja">
-                    <h2>Contacto</h2>
-                    <small>&copy; 2026 Rueda Libre</small>
-                </div>
-
-                <div class="caja">
-                    <h2>horarios</h2>
-                    <dl>
-                        <dt>Lunes a viernes</dt>
-                        <dd>7:00 a. m. - 7:00 p. m.</dd>
-                        <dt>Sábados, domingos y festivos</dt>
-                        <dd>6:00 a. m. - 2:00 p. m.</dd>
-                    </dl>
-                </div>
-                
-        </footer>
-
     </main>
+    <footer>
+        <div class="pie-pag-contenido">
+
+            <div class="caja" >
+                <h2>Rueda libre</h2>
+                <address>
+                    Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+                </address>
+            </div>
+
+            <div class="caja">
+                <h2>Contacto</h2>
+                <small>&copy; 2026 Rueda Libre</small>
+            </div>
+
+            <div class="caja">
+                <h2>horarios</h2>
+                <dl>
+                    <dt>Lunes a viernes</dt>
+                    <dd>7:00 a. m. - 7:00 p. m.</dd>
+                    <dt>Sábados, domingos y festivos</dt>
+                    <dd>6:00 a. m. - 2:00 p. m.</dd>
+                </dl>
+            </div>            
+    </footer>
+
+
     <a href="https://wa.me/573000000000" target="_blank" 
         class="whatsapp-flotante" aria-label="Contáctanos por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i></a>

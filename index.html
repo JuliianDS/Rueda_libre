@@ -17,20 +17,20 @@
 </head>
 
 <body>
+    <header>
+        <h1>Rueda Libre</h1>
+        <nav >
+            <ul id="menu">
+                <li><a href="index.html" class="activo">Pagina de Inicio</a></li>
+                <li><a href="./paginas/Tarifas.html">Planes de Alquiler</a></li>
+                <li><a href="./paginas/Reservas.html">Reservas</a></li>
+            </ul>
+        </nav>        
+    </header>
+
     <main>
-        <header>
-            <h1>Rueda Libre</h1>
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html" class="activo">Pagina de Inicio</a></li>
-                    <li><a href="./paginas/Tarifas.html">Planes de Alquiler</a></li>
-                    <li><a href="./paginas/Reservas.html">Reservas</a></li>
-                </ul>
-            </nav>
-            
-        </header>
-        <div class="presentacion-RL">
-            <div class="presentacion-txt">
+        <div class="portada">
+            <div class="portada-txt">
                 <p>
                     "¡Bienvenido a Rueda Libre! Tu pasaporte a la libertad sobre dos ruedas 
                     y al ecoturismo urbano en Medellín. Somos mucho más que un servicio de 
@@ -44,14 +44,14 @@
                     <a href="#encuentranos">Visítanos o contáctanos aquí</a>
                 </p>
             </div>
-            <img src="./ img/portada.jpeg" width="500" alt="portada, ciclas recorriendo medellin">
+            <img src="./img/portada.jpeg" width="500" alt="portada, ciclas recorriendo medellin">
         </div>
         <section>
             <h2>¿Quienes Somos?</h2>
 
             <p>Somos una empresa apacionada por el <strong>ecoturismo</strong> y la <strong>ciclomovilidad</strong>,
                 conectamos a las personas con la historia y cultura de medellin rodando por sus calles.</p>
-            <img src="./ img/ruta.jpeg" width="500" alt="Ruta del recorrido guiado">
+            <img src="./img/ruta.jpeg" width="500" alt="Ruta del recorrido guiado">
         </section>
 
         <section>
@@ -84,7 +84,7 @@
             </div>
             <div class="flota">
                 <article class="tarj-flota">
-                    <img src=" img/urb_c.jpeg" alt="Bicicleta clasica Urbana">
+                    <img src="./img/urb_c.jpeg" alt="Bicicleta clasica Urbana">
                     <h3>Urbana Clasica</h3>
                     <p>Cómoda y liviana para las ciclorrutas. Sillín acolchado y postura erguida, ideal
                         para paseos tranquilos por las ciclorutas de la ciudad.</p>
@@ -94,7 +94,7 @@
                 </article>
 
                 <article class="tarj-flota">
-                    <img src=" img/ubr_pl.jpeg" alt="Bicicleta urbana plegable">
+                    <img src="./img/ubr_pl.jpeg" alt="Bicicleta urbana plegable">
                     <h3>Urbana Plegable</h3>
                     <p>Se dobla en segundos; ideal para combinar con el metro. Facíl  de llevar en transporte
                         público y guardarla en cualquier lugar.</p>
@@ -105,7 +105,7 @@
 
 
                 <article class="tarj-flota">
-                    <img src=" img/mont_tr.jpeg" alt="Bicicleta para montaña">
+                    <img src="./img/mont_tr.jpeg" alt="Bicicleta para montaña">
                     <h3>Montaña Trail</h3>
                     <p>excelente suspensión delantera, ideal para terrenos destapados, con 21 cambios para facil 
                         ascenso. Pensada para senderos de tierra y piedra, la elegida para los cerros de Medellín.</p>
@@ -116,7 +116,7 @@
 
 
                 <article class="tarj-flota">
-                    <img src=" img/gr_av.jpeg" alt="Bicicleta Gravel aventure">
+                    <img src="./img/gr_av.jpeg" alt="Bicicleta Gravel aventure">
                     <h3>Gravel aventure</h3>
                     <p>Todoterreno, para rutas de asfalto y destapado. Rápida en carretera y firme en caminos de tierra,
                         perfecta para zona rural.</p>
@@ -126,7 +126,7 @@
                 </article>
 
                 <article class="tarj-flota">
-                    <img src=" img/ele_urb.jpeg" alt="Bicicleta electrica urbana">
+                    <img src="./img/ele_urb.jpeg" alt="Bicicleta electrica urbana">
                     <h3>Electrica urbana</h3>
                     <p>Asistencia eléctrica con 45 km de autonomía. Sube lomas sin el menor esfuerzo, llegas a cualquier 
                         compromiso sin sudar.</p>
@@ -136,7 +136,7 @@
                 </article>
 
                 <article class="tarj-flota">
-                    <img src=" img/infan.jpeg" alt="Bicicleta para niños">
+                    <img src="./img/infan.jpeg" alt="Bicicleta para niños">
                     <h3>infantil</h3>
                     <p>Para niños de 6 a 10 años. Liviana, segura,  con llantas auxiliares y frenos fáciles de usar para que 
                         cualquier pequeño disfrute de un gran paseo.</p>
@@ -146,7 +146,7 @@
                 </article>
 
                 <article class="tarj-flota">
-                    <img src=" ./ img/tad_av.jpeg" alt="Bicicleta Para dos personas">
+                    <img src=" ./img/tad_av.jpeg" alt="Bicicleta Para dos personas">
                     <h3>Tandem</h3>
                     <p>Perfecta para dos personas; si te gusta hacer todo en pareja, esta es tu mejor eleccion, pedal sincronizado.</p>
                     <p>precio por hora <strong>20.000</strong></p>
@@ -157,6 +157,35 @@
             </div>
 
         </section>
+        <section>
+            <div>
+                <h2>Nuestras rutas</h2>
+            </div>
+            <div class="tarjetas">
+
+            <article class="tarjeta rutas">
+                <img src="./img/r_parque.jpeg" alt="Representacion de los recorridos rio y parques" aria-label="Representacion del recorrido rio y parques">
+                <h3>Rio y parques</h3>
+                <p>Un paseo tranquilo por los parques lineales y la orilla del río, ideal para empezar o para ir en familia.</p>
+                <p> Nivel: <strong>Facil</strong></p>
+            </article>
+            
+            <article class="tarjeta rutas">
+                 <img src="./img/r_barrio.jpeg" alt="Imagen barrio" aria-label="representacion del recorrido en los barrios de medellin">
+                 <h3>Sabores del barrio</h3>    
+                 <p> Recorre los barrios tradicionales de Medellín y haz paradas para probar comida típica en el camino.</p>
+                 <p> Nivel: <strong>Intermedio</strong></p>
+            </article>
+
+            <article class="tarjeta rutas">
+                <img src="./img/r_palmas.jpeg" alt="representacion palmas medellin" aria-label="representacion del recorrido en el lugar palmas de medellin">
+                <h3>Reto palmas</h3>
+                <p>La subida más exigente: una carretera de montaña con la mejor vista panorámica de la ciudad al llegar a la cima.</p>
+                <p>Nivel: <strong>Dificl</strong></p>
+            </article>
+        </div>
+        </section>
+
         <section>
             <article>
                 <h2>¿Cómo alquilar? 🚴‍♂️</h2>
@@ -179,7 +208,7 @@
                 </ul>
             </aside>
 
-            <img src="./ img/cicla.jpeg" width="500" alt="nuestra cicla">
+            <img src="./img/cicla.jpeg" width="500" alt="nuestra cicla">
         </section>
 
         <section id="encuentranos">
@@ -189,34 +218,37 @@
             <p>Escribenos a nuestro correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
 
         </section>
-        <footer>
-
-            <div class="pie-pag-contenido">
-
-                <div class="caja" >
-                    <h2>Rueda libre</h2>
-                    <address>
-                        Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
-                    </address>
-                </div>
-
-                <div class="caja">
-                    <h2>Contacto</h2>
-                    <small>&copy; 2026 Rueda Libre</small>
-                </div>
-
-                <div class="caja">
-                    <h2>horarios</h2>
-                    <dl>
-                        <dt>Lunes a viernes</dt>
-                        <dd>7:00 a. m. - 7:00 p. m.</dd>
-                        <dt>Sábados, domingos y festivos</dt>
-                        <dd>6:00 a. m. - 2:00 p. m.</dd>
-                    </dl>
-                </div>
-                
-        </footer>
     </main>
+    <footer>
+
+        <div class="pie-pag-contenido">
+
+            <div class="caja" >
+                <h2>Rueda libre</h2>
+                <address>
+                    Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+                </address>
+            </div>
+
+            <div class="caja">
+                <h2>Contacto</h2>
+                <small>&copy; 2026 Rueda Libre</small>
+            </div>
+
+            <div class="caja">
+                <h2>horarios</h2>
+                <dl>
+                    <dt>Lunes a viernes</dt>
+                    <dd>7:00 a. m. - 7:00 p. m.</dd>
+                    <dt>Sábados, domingos y festivos</dt>
+                    <dd>6:00 a. m. - 2:00 p. m.</dd>
+                </dl>
+            </div>
+            
+    </footer>
+
+
+
     <a href="https://wa.me/573000000000" target="_blank" 
         class="whatsapp-flotante" aria-label="Contáctanos por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i></a>

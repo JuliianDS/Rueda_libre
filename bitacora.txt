@@ -6,6 +6,26 @@ ruta: /index.html
 metodo: get
 estado: 200ok
 /promociones: 404notfound
-html: es la estructura de la pagina, como las bigas y columnas de una casa, donde cuales son los titulos, parrafos imagenes y enlaces.
+
+html: es la estructura de la pagina, como las bigas y columnas de una casa, donde cuales son los titulos, 
+parrafos imagenes y enlaces.
+
 css: se encarga de la parte visual, como se ve la pagina o como muestra toda la informacion de la pagina.
-javascrip: es el funcionamiento o interaccion de la pagina, la parte donde agregas la logica y responde a las acciones del usuario.
+
+javascrip: es el funcionamiento o interaccion de la pagina, la parte donde agregas la logica y responde 
+a las acciones del usuario.
+
+
+
+
+
+
+
+
+
+============ semana 2 dia 1 ===========
+se reestructuro el header, navegador y pie de pagina, al reducir el contenido baja a la sigunte pagina 
+y simpre se mantiene visible en comparacion con el resto de la pagina.
+
+cuando reduzco el tamaño de la pagina, al empezar son 4 columnas, luego en 900 son 3 columnas y en 500 
+baja hasta 2
