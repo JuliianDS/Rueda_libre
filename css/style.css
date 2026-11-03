@@ -339,8 +339,7 @@ button{
    padding: o.5rem;
    border: 3px solid var(--gris-asfalto);
    border-radius: 1rem;
-   gap: 17px;
-
+   gap: 17px;   
 }
 .tarj-flota img{
     width: 100%;
