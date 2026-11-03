@@ -6,33 +6,48 @@
     --azul-noche: #14213D;
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
-    --color-primario: #5d44ff;
+    --color-navegacion: #302002ee;
+
 }
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    
 }
 
 body {
     font-family: var(--fuente-texto);
-    font-weight: 400;
-    max-width: 1200px;
+    width: 100%;
     min-height: 100vh;
-    margin: 0;
-    padding: 2rem;
-    
-    background-color: var(--crema);
+    background-color: var(--crema);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--fuente-titulos);
-    font-weight: 700;
 }
-
+main{
+    max-width: 70rem;
+    
+    
+}
+/*================ Encabezado ======================*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-navegacion);
+    width: 100%;    
+    padding: 0 0.5rem;
+    color: var(--verde-ruta);
+    
+}
 #menu a {
-    color: var(--gris-asfalto);
+    color: white;
     text-decoration: none;
+    
 }
 
 #menu a.activo {
@@ -73,6 +88,7 @@ article{
 img{
     width: 100%;
     height: auto;
+    max-width: 600px;
 }
 /*=============== formulario ===============*/
 form{
@@ -138,6 +154,7 @@ button{
     font-weight: 700;
     border-radius: 999px;
 }
+/* ============================== boton whatsapp flotante =================*/
 .whatsapp-flotante {
     position: fixed;
     bottom: 2rem;
@@ -164,4 +181,101 @@ button{
 }
 .whatsapp-flotante :hover{
     transform: scale(1.2);
+}
+/*========================= botones y enlaces =====================*/
+.boton {
+    display: inline-block;
+    background-color: var(--verde-ruta);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    font: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.boton:hover {
+    background-color: var(--azul-noche);
+}
+.boton:focus {
+    outline: 3px solid var(--azul-noche);
+    outline-offset: 2px;
+}
+
+
+
+
+
+
+
+.flota{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr)) ;
+    gap: 1rem;
+}
+
+.tarj-flota{
+   display: flex;
+   flex-direction: column;
+   padding: o.5rem;
+   border: 3px solid var(--gris-asfalto);
+   border-radius: 1rem;
+   gap: 17px;
+
+}
+.tarj-flota img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.btn-reserva{
+    align-self: flex-start;
+    margin: auto auto 0.5rem;
+}
+
+.tarj-flota h3, .tarj-flota p{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================== pie de pagina =======================*/
+footer{
+          
+    background-color: var(--color-navegacion);
+    color: white;
+    padding: 0 0.5rem;
+    
+    
+}
+footer a{
+    color: #159e47;
+}
+
+.pie-pag-contenido{
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+}
+.caja dl dd{
+    margin: 0;
+}
+.caja{
+    flex: 1 1 12rem;
 }
