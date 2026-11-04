@@ -376,8 +376,7 @@ button{
    padding: o.5rem;
    border: 3px solid var(--gris-asfalto);
    border-radius: 1rem;
-   gap: 17px;
-
+   gap: 17px;   
 }
 .tarj-flota img{
     width: 100%;
@@ -420,7 +419,7 @@ button{
 .rutas{
     flex: 1;
 }
-.contenedor_grid{
+
 .form_grid {    
     display: grid;
     grid-template-columns: 2fr;
@@ -440,4 +439,3 @@ button{
 
 
 /*================== pie de pagina =======================*/
-
