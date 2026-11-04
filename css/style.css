@@ -81,6 +81,23 @@ fieldset{
     flex-wrap: wrap;
     gap: 1rem;
 }
+footer{
+    width: 100%;
+    background-color: var(--azul-noche);
+    color: white;
+    padding: 0 0.5rem;
+}  
+footer a{
+    color: #159e47;
+}
+
+.pie-pag-contenido{
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
 
 
 @media (min-width: 768px) {               /* ================= @media 768 ===============*/
@@ -117,23 +134,23 @@ fieldset{
         align-items: center;
     }
 
-    .portada {                             /* ==== portada ====*/
+    .portada {               /* ==== portada ====*/
         min-height: 50vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 2rem;
         gap: 2rem;
-}
+    }
     .portada img {
         display: flex;
         height: 70%;
         border-radius: 0.5rem;
         align-items: center;
-}
+    }
 
     .flota{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(15rem,1fr)) ;
+        grid-template-columns: repeat(auto-fill, minmax(18rem,1fr)) ;
         gap: 1rem;
     }
     .container {
@@ -145,7 +162,7 @@ fieldset{
         display: flex;
         gap: 1.5rem;
         align-items: center;
-}
+    }
     main, header, footer{
         max-width: 70rem;
         margin: 0 auto;
@@ -163,6 +180,26 @@ fieldset{
     }
     footer{
         width: 100%;
+        background-color: var(--azul-noche);
+        color: white;
+        padding: 0 0.5rem;
+    }  
+    footer a{
+        color: #159e47;
+    }
+
+    .pie-pag-contenido{
+        display: flex;
+        flex-wrap: wrap;   
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+    .caja dl dd{
+    margin: 0;
+    }
+    .caja{
+     flex: 1 1 12rem;
     }
     form{
         display: flex;
@@ -280,7 +317,7 @@ button{
 .whatsapp-flotante {
     position: fixed;
     bottom: 2rem;
-    right: 1rem;
+    right: 2rem;
     background-color: #159e47;
     color: rgb(230, 228, 228);
     
@@ -384,13 +421,11 @@ button{
     flex: 1;
 }
 .contenedor_grid{
-     display: grid;
+.form_grid {    
+    display: grid;
     grid-template-columns: 2fr;
     margin-top: 2rem;
     gap: 2rem;
-}
-.form_grid {    
-   flex: 2
 }
 
 
@@ -405,29 +440,4 @@ button{
 
 
 /*================== pie de pagina =======================*/
-footer{
-          
-    background-color: var(--azul-noche);
-    color: white;
-    padding: 0 0.5rem;
-    
-    
-}
-footer a{
-    color: #159e47;
-}
 
-.pie-pag-contenido{
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-
-}
-.caja dl dd{
-    margin: 0;
-}
-.caja{
-    flex: 1 1 12rem;
-}

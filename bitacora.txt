@@ -29,3 +29,7 @@ y simpre se mantiene visible en comparacion con el resto de la pagina.
 
 cuando reduzco el tamaño de la pagina, al empezar son 4 columnas, luego en 900 son 3 columnas y en 500 
 baja hasta 2
+
+flota con boostrap
+fue muhco mas sencillo darle css, ya que se puede abreviar mucho con los comando de boostrap, no 
+cronometre pero fue mucho mas sencillo y rapido.
