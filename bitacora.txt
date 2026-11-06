@@ -23,7 +23,7 @@ a las acciones del usuario.
 
 
 
-============ semana 2 dia 1 ===========
+============ semana 2 dia-1 ===========
 se reestructuro el header, navegador y pie de pagina, al reducir el contenido baja a la sigunte pagina 
 y simpre se mantiene visible en comparacion con el resto de la pagina.
 
@@ -33,3 +33,10 @@ baja hasta 2
 flota con boostrap
 fue muhco mas sencillo darle css, ya que se puede abreviar mucho con los comando de boostrap, no 
 cronometre pero fue mucho mas sencillo y rapido.
+
+========== semana 2 dia-2 ejercico-7 boostrap al inicio ==============
+cambie todo por boostrap, al cambiar las variables y clases que 
+afectaban mis section, no han mostrado interferencia con los de boostrap, y se han matenido los de tarifas 
+y reservas con total normalidad tambien.
+revisando el devtools puedo encontrar que varios style se tacharon en el body pricipalmente, margin, font-family, 
+width, padding. En general no hubieron mas conflictos.

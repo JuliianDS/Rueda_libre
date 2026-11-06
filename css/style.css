@@ -14,9 +14,15 @@
 *::after {
     box-sizing: border-box;
 }
-
-
-
+.row{
+    margin: 0.5rem;
+    border-radius: 15%;
+}
+main, header, footer{
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 1rem;    
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--fuente-titulos);
 }
@@ -42,24 +48,8 @@ header{
 }
 
 
-.flota {
-    display: grid;
-    grid-template-columns: 1fr; /* Una columna en celulares */
-    gap: 1.5rem;
-}
-.portada {                             /* ==== portada ====*/
-    min-height: 50vh;
-    display:flex;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    gap: 2rem;
-}
-.portada img {
-    display: flex;
-    height: 70%;
-    border-radius: 0.5rem;
-    align-items: center;
-}
+
+
 #menu {
     list-style: none;
     display: flex;
@@ -118,9 +108,7 @@ footer a{
         gap: 1.5rem;
     }
 
-    .flota {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
+    
     
 }
                              
@@ -134,25 +122,7 @@ footer a{
         align-items: center;
     }
 
-    .portada {               /* ==== portada ====*/
-        min-height: 50vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 2rem;
-        gap: 2rem;
-    }
-    .portada img {
-        display: flex;
-        height: 70%;
-        border-radius: 0.5rem;
-        align-items: center;
-    }
-
-    .flota{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(18rem,1fr)) ;
-        gap: 1rem;
-    }
+   
     .container {
         gap: 0.5rem;
         padding: 0.5rem;
@@ -163,11 +133,7 @@ footer a{
         gap: 1.5rem;
         align-items: center;
     }
-    main, header, footer{
-        max-width: 70rem;
-        margin: 0 auto;
-        padding: 0 1rem;    
-    }
+    
     header{
         display: flex;
         justify-content: space-between;
@@ -258,6 +224,7 @@ article{
 img{
     max-width: 100%;
     height: auto;
+    border-radius: 8%;
     
 }
 
@@ -361,81 +328,3 @@ button{
     outline: 3px solid var(--azul-noche);
     outline-offset: 2px;
 }
-
-
-
-
-
-
-/* ===========================    nueva flota    ================*/
-
-
-.tarj-flota{
-   display: flex;
-   flex-direction: column;
-   padding: o.5rem;
-   border: 3px solid var(--gris-asfalto);
-   border-radius: 1rem;
-   gap: 17px;   
-}
-.tarj-flota img{
-    width: 100%;
-    height: 14rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
-
-.btn-reserva{
-    align-self: flex-start;
-    margin: auto auto 0.5rem;
-}
-
-.tarj-flota h3, .tarj-flota p{
-    margin: 0;
-}
-
-/* ====================== Tarjetas ==============*/
-
-.tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.tarjeta {
-    flex: 1 1 15rem;
-    padding: 0.5rem;
-    border: 3px solid var(--gris-asfalto);
-    border-radius: 2rem;
-    margin-bottom: 2rem;
-}
-
-.tarjeta img {
-    width: 100%;
-    height: 18rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
-}
- 
-.rutas{
-    flex: 1;
-}
-
-.form_grid {    
-    display: grid;
-    grid-template-columns: 2fr;
-    margin-top: 2rem;
-    gap: 2rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*================== pie de pagina =======================*/
