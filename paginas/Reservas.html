@@ -9,146 +9,166 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Reservas | Rueda Libre</title>
 </head>
 
 <body>
-    <header>
-        <h1>Reserva tu Bicicleta</h1>
-        <nav >
-            <ul id="menu">
-                <li><a href="../index.html" class="activo">Pagina de Inicio</a></li>
-                <li><a href="../paginas/Tarifas.html">Planes de Alquiler</a></li>
-                <li><a href="/Reservas.html">Reservas</a></li>
-            </ul>
-        </nav>            
+    <header class="container rounded-2">
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand text-success">
+                    <h1>Reserva tu bicicleta</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-success btn" aria-current="page" href="../index.html">Pagina
+                                de inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn" href="./Tarifas.html">Planes de Alquiler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn" href="./Reservas.html">Reservas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main class="contenedor_grid">
-              
-        <section class="form_grid">
-            <h2>Formulario de Alquiler</h2>
-            <form action="" method="post">
-                <fieldset>
+    <main class="container">
+        <section class="row p-2">
+            <div class="col-md-8 border border-dark rounded-4 p-4 mt-4">
+                <h2>Formulario de Alquiler</h2>
+                <form action="" method="post">
+                    <fieldset class="border border-dark rounded-4 p-4 mb-4">
 
-                    <legend>Tus Datos</legend>
+                        <legend>Tus Datos</legend>
 
-                    <div>
-                        <label for="nombre">Nombre Completo</label>
-                        <input type="text" id="nombre" name="nombre" required minlength="3">
-                    </div>
-                    <div>
-                        <label for="cedula">Documento de Identidad</label>
-                        <input type="number" id="cedula" name="cedula" required minlength="6" maxlength="10">
-                    </div>
-                    <div>
-                        <label for="correo">Correo Electronico</label>
-                        <input type="email" id="correo" name="correo" required>
-                    </div>
-                    <div>
-                        <label for="contacto">Numero de Contacto</label>
-                        <input type="tel" id="contacto" name="contacto" required pattern="^3[0-9]{9}$" value="3">
-                    </div>
+                        <div>
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required minlength="3">
+                        </div>
+                        <div>
+                            <label for="cedula">Documento de Identidad</label>
+                            <input type="number" id="cedula" name="cedula" required minlength="6" maxlength="10">
+                        </div>
+                        <div>
+                            <label for="correo">Correo Electronico</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </div>
+                        <div>
+                            <label for="contacto">Numero de Contacto</label>
+                            <input type="tel" id="contacto" name="contacto" required pattern="^3[0-9]{9}$" value="3">
+                        </div>
 
-                </fieldset>
-                <fieldset>
+                    </fieldset>
+                    <fieldset class="border border-dark rounded-4 p-4 mb-4">
 
-                    <legend>Tu Alquiler</legend>
+                        <legend>Tu Alquiler</legend>
 
-                    <div>
-                        <label for="fecha">Fecha de reserva</label>
-                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required
-                            title="Del 01/11/2026 al 31/12/2026">
-                    </div>
-                    <div>
-                        <label for="cantidad">Cantidad de bicicletas</label>
-                        <input type="number" id="cantidad" name="cantidad_bc" min="1" max="6" required>
-                    </div>
+                        <div>
+                            <label for="fecha">Fecha de reserva</label>
+                            <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required
+                                title="Del 01/11/2026 al 31/12/2026">
+                        </div>
+                        <div>
+                            <label for="cantidad">Cantidad de bicicletas</label>
+                            <input type="number" id="cantidad" name="cantidad_bc" min="1" max="6" required>
+                        </div>
 
-                    <div>
-                        <p>Tipo de bicicleta</p>
+                        <div class="d-flex">
+                            <p>Tipo de bicicleta</p>
 
-                        <input type="radio" id="montaña" name="t-bici" value="montaña" required>
-                        <label for="montaña">Montaña</label>
+                            <input type="radio" id="montaña" name="t-bici" value="montaña" required>
+                            <label for="montaña">Montaña</label>
 
-                        <input type="radio" id="urbana" name="t-bici" value="urbana" required>
-                        <label for="urbana">Urbana</label>
+                            <input type="radio" id="urbana" name="t-bici" value="urbana" required>
+                            <label for="urbana">Urbana</label>
 
-                        <input type="radio" id="electrica" name="t-bici" value="electrica" required>
-                        <label for="electrica">Electrica</label>
+                            <input type="radio" id="electrica" name="t-bici" value="electrica" required>
+                            <label for="electrica">Electrica</label>
 
-                    </div>
-                    <div>
-                        <label for="ruta">Tipo de Ruta</label>
-                        <select name="ruta" id="ruta" required>
-                            <option>Rios y Parques</option>
-                            <option>Sabores de Barrio</option>
-                            <option>Reto las Palmas</option>
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Confirmación</legend>
+                        </div>
+                        <div>
+                            <label for="ruta">Tipo de Ruta</label>
+                            <select name="ruta" id="ruta" required>
+                                <option>Rios y Parques</option>
+                                <option>Sabores de Barrio</option>
+                                <option>Reto las Palmas</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="border border-dark rounded-4 p-4 mb-4">
+                        <legend>Confirmación</legend>
 
-                    <div>
-                        <label for="nota">Notas adicionales</label>
-                        <textarea name="n-especiales" id="notas" rows="4" cols="30" maxlength="300"></textarea>
+                        <div>
+                            <label for="nota">Notas adicionales</label>
+                            <textarea name="n-especiales" id="notas" rows="4" cols="30" maxlength="300"></textarea>
 
-                    </div>
-                    <div>
-                        <input type="checkbox" id="terminos" name="acepta_terminos" value="si" required>
-                        <label for="terminos">Aceptas los términos y condiciones</label>
-                    </div>
+                        </div>
+                        <div class="text-center">
+                            <input type="checkbox" id="terminos" name="acepta_terminos" value="si" required>
+                            <label for="terminos">Aceptas los términos y condiciones</label>
+                        </div>
 
-                </fieldset>
+                    </fieldset>
+                    <button type="submit" class="btn btn-success">Enviar reserva</button>
+                </form>
+            </div>
+            <div class="col-md-4">
 
-                <button type="submit" class="boton">Enviar reserva</button>
+                <section class="border border-dark rounded-4 p-3 text-center mt-5">
+                    <h2>Horarios de Atención</h2>
+                    <dl>
+                        <dt>Lunes</dt>
+                        <dd>7:00 am - 7:00 pm</dd>
+                        <dt>Martes</dt>
+                        <dd>7:00 am - 7:00 pm</dd>
+                        <dt>Miercoles</dt>
+                        <dd>7:00 am - 7:00 pm</dd>
+                        <dt>Jueves</dt>
+                        <dd>7:00 am - 7:00 pm</dd>
+                        <dt>Viernes</dt>
+                        <dd>7:00 am - 7:00 pm</dd>
+                        <dt>Sabado</dt>
+                        <dd>7:00 am - 7:00 pm</dd>
+                        <dt>Domingos</dt>
+                        <dd>6:00 am - 2:00 pm</dd>
+                        <dt>Festivos</dt>
+                        <dd>6:00 am - 2:00 pm</dd>
+                    </dl>
+                </section>
 
-            </form>
-            <p>
-                Correo de atención al cliente:
-                <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
-            </p>
-            <section class="horarios_grid">
-                <h2>Horarios de Atención</h2>
-                <dl>
-                    <dt>Lunes</dt>
-                    <dd>7:00 am - 7:00 pm</dd>
-                    <dt>Martes</dt>
-                    <dd>7:00 am - 7:00 pm</dd>
-                    <dt>Miercoles</dt>
-                    <dd>7:00 am - 7:00 pm</dd>
-                    <dt>Jueves</dt>
-                    <dd>7:00 am - 7:00 pm</dd>
-                    <dt>Viernes</dt>
-                    <dd>7:00 am - 7:00 pm</dd>
-                    <dt>Sabado</dt>
-                    <dd>7:00 am - 7:00 pm</dd>
-                    <dt>Domingos</dt>
-                    <dd>6:00 am - 2:00 pm</dd>
-                    <dt>Festivos</dt>
-                    <dd>6:00 am - 2:00 pm</dd>
-                </dl>                
-            </section>
-            
+                <p class="text-center mt-5">
+                    Correo de atención al cliente:
+                    <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
+                </p>
+            </div>
         </section>
-    </main>
-    <footer>
-        <div class="pie-pag-contenido">
 
-            <div class="caja" >
+    </main>
+    <footer class="container rounded-2">
+        <div class="row">
+            <div class="col-md-4 text-center mt-5">
                 <h2>Rueda libre</h2>
                 <address>
                     Correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a>
                 </address>
             </div>
 
-            <div class="caja">
+            <div class="col-md-4 text-center mt-5">
                 <h2>Contacto</h2>
                 <small>&copy; 2026 Rueda Libre</small>
             </div>
 
-            <div class="caja">
+            <div class="col-md-4 text-center">
                 <h2>horarios</h2>
                 <dl>
                     <dt>Lunes a viernes</dt>
@@ -156,13 +176,15 @@
                     <dt>Sábados, domingos y festivos</dt>
                     <dd>6:00 a. m. - 2:00 p. m.</dd>
                 </dl>
-            </div>            
+            </div>
+        </div>
     </footer>
 
-
-    <a href="https://wa.me/573000000000" target="_blank" 
-        class="whatsapp-flotante" aria-label="Contáctanos por WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i></a>
+    <aside>
+        <a href="https://wa.me/573000000000" target="_blank" class="whatsapp-flotante"
+            aria-label="Contáctanos por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i></a>
+    </aside>
 
 </body>
 
