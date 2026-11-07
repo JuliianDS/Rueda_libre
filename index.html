@@ -21,23 +21,21 @@
     <header class="container rounded-2">
         <nav class="navbar navbar-expand-lg w-100">
             <div class="container-fluid">
-                <a class="navbar-brand text-success " href="./index.html">
-                    <h1>Rueda Libre</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-expanded="false"
+                <img src="./img/logo.jpeg" alt="logo rueda libre">
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-success btn" aria-current="page" href="index.html">Pagina de inicio</a>
+                            <a class="nav-link active text-white btn btn-lg btn-outline-secondary" aria-current="page" href="index.html">Pagina de inicio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link active text-white btn btn btn-sm btn-outline-secondary" href="./paginas/Tarifas.html">Planes de Alquiler</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white btn" href="./paginas/Tarifas.html">Planes de Alquiler</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white btn" href="./paginas/Reservas.html">Reservas</a>
+                            <a class="nav-link active text-white btn btn-outline btn-success" href="./paginas/Reservas.html">Reservas</a>
                         </li>
                     </ul>
                 </div>
@@ -45,11 +43,14 @@
         </nav>
     </header>
     <main class="container">
-        <section class="row mb-2 border border-dark rounded-4 p-4">
 
-            <div class="col-md-6 d-flex aling-items-center">
+<!--------------------- Seccion inicial de bienvenida ----->
+
+        <section class="row mb-2 border border-dark rounded-4 p-4">
+            <div class="col-md-6 d-flex flex-column">
+                <h1>¡Bienvenido a Rueda Libre!</h1>
                 <p class="p-3">
-                    "¡Bienvenido a Rueda Libre! Tu pasaporte a la libertad sobre dos ruedas
+                    Tu pasaporte a la libertad sobre dos ruedas
                     y al ecoturismo urbano en Medellín. Somos mucho más que un servicio de
                     alquiler de bicicletas: somos una comunidad apasionada por conectar a
                     locales y viajeros con la historia, el arte y la cultura de nuestra ciudad
@@ -58,7 +59,7 @@
                     expertos, aquí encontrarás el equipo perfecto, seguro y listo para la aventura.
                     Visítanos o contáctanos aquí y comienza a rodar por los mejores paisajes paisas."
                     <br>
-                    <a href="#encuentranos">Visítanos o contáctanos aquí</a>
+                    <a href="#encuentranos" class="btn btn-outline btn-warning">Visítanos o contáctanos aquí</a>
                 </p>
             </div>
             <div class="col-md-6 ">
@@ -81,9 +82,11 @@
                     cada trayecto en una auténtica aventura urbana.
                 </p>
             </div>
-        </section>
+        </section>        
 
-        <section class="mb-5">
+<!------------ Seccion de presentacion de servicios  --------------------------------->
+        
+<section class="mb-5">
             <h2>Nuestros servicios</h2>
             <div class="row">
                 <div class="col-md-4 border border-dark rounded-4">
@@ -91,11 +94,11 @@
                         <img src="./img/alquiler-inicio.png" alt="" class="img-fluid">
                         <div class="card-body">
                             <h3>Alquiler de bicicletas</h3>
-                            <p>Disfruta de nuestra comodas bicicletas urbanas,<strong>incluye casco y candado</strong>
+                            <p>Disfruta de nuestra comodas bicicletas urbanas, incluye<strong> casco y candado</strong>
                                 para
                                 proteccion personal y seguridad. </p>
                             </div>
-                            <a href="./paginas/Tarifas.html#alquiler" class="btn btn-bs-primary w-100 mb-3">¿Conoces Nuestros Planes de Alquiler?</a>
+                            <a href="./paginas/Tarifas.html#alquiler" class="btn btn-outline btn-warning w-100 mb-3">¿Conoces Nuestros Planes de Alquiler?</a>
                     </div>
                 </div>
                 <div class="col-md-4 border border-dark rounded-4">
@@ -108,7 +111,7 @@
                                     expertos</strong>.
                             </p>
                         </div>
-                        <a href="./paginas/Tarifas.html#Rutas" class="btn btn-success w-100 mb-3">¿Que Recorrido Prefieres?</a>
+                        <a href="./paginas/Tarifas.html#Rutas" class="btn btn-outline btn-warning w-100 mb-3">¿Que Recorrido Prefieres?</a>
                     </div>
                 </div>
                 <div class="col-md-4 border border-dark rounded-4">
@@ -121,20 +124,55 @@
                                 segura.
                             </p>
                         </div>
-                        <a href="#encuentranos" class="btn btn-success w-100 mb-3">Encuentranos</a>
+                        <a href="#encuentranos" class="btn btn-outline btn-warning w-100 mb-3">Encuentranos</a>
                     </div>
 
                 </div>
             </div>
 
         </section>
-        <section class="mb-5">
+
+<!--------------------- Seccion del carrusel ------------------------------>
+
+        <section class="my-3">
+            <h2>Nuestras !Promociones del mes!</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./img/clasica_promo.jpeg" class="d-block w-100" alt="foto de nuetsra ciclas urbanas en promocion de 2x1 los martes">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./img/elec_promo.jpeg" class="d-block w-100" alt="imagen de nuestra cicla en promocion 20 % de descuento en eléctricas de lunes a jueves">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./img/cumple_promo.jpeg" class="d-block w-100" alt="promocion, si cumples años, el recorrido guiado es gratis">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+<!--------------------- Seccion Para la flota ------------------------------------------>
+        
+        <section class="my-4">
             <h2>Nuestra Flota</h2>
             <div class="row">
                 <div class="col-md-3 border border-dark rounded-4">
                     <div class="card h-100">
                         <img src="./img/urb_c.jpeg" alt="Bicicleta clasica Urbana" class="imf-fluid">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3>Urbana Clasica</h3>
                             <p>Cómoda y liviana para las ciclorrutas. Sillín acolchado y postura erguida, ideal
                                 para paseos tranquilos por las ciclorutas de la ciudad.</p>
@@ -147,12 +185,12 @@
                 <div class="col-md-3 border border-dark rounded-4">
                     <div class="card h-100">
                         <img src="./img/ubr_pl.jpeg" alt="Bicicleta urbana plegable" class="img-fluid">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3>Urbana Plegable</h3>
                             <p>Se dobla en segundos; ideal para combinar con el metro. Facíl de llevar en transporte
                                 público y guardarla en cualquier lugar.</p>
                             <p>precio por hora <strong>12.000</strong></p>
-                            <a class="btn btn-success btn-mb-0" href="../paginas/Reservas.html"
+                            <a class="btn btn-success" href="../paginas/Reservas.html"
                                 aria-label="reserva bicicleta Urbana Plegable">Reservar Ahora</a>
                         </div>
                     </div>
@@ -160,7 +198,7 @@
                 <div class="col-md-3 border border-dark rounded-4">
                     <div class="card h-100">
                         <img src="./img/mont_tr.jpeg" alt="Bicicleta para montaña" class="img-fluid">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3>Montaña Trail</h3>
                             <p>excelente suspensión delantera, ideal para terrenos destapados, con 21 cambios para
                                 facil
@@ -175,7 +213,7 @@
                 <div class="col-md-3 border border-dark rounded-4">
                     <div class="card h-100">
                         <img src="./img/gr_av.jpeg" alt="Bicicleta Gravel aventure" class="img-fluid">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3>Gravel aventure</h3>
                             <p>Todoterreno, para rutas de asfalto y destapado. Rápida en carretera y firme en
                                 caminos de tierra,
@@ -191,7 +229,7 @@
                 <div class="col-md-3 border border-dark rounded-4">
                     <div class="card h-100">
                         <img src="./img/ele_urb.jpeg" alt="Bicicleta electrica urbana">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3>Electrica urbana</h3>
                             <p>Asistencia eléctrica con 45 km de autonomía. Sube lomas sin el menor esfuerzo, llegas
                                 a cualquier
@@ -205,7 +243,7 @@
                 <div class="col-md-3 border border-dark rounded-4">
                     <div class="card h-100">
                         <img src="./img/infan.jpeg" alt="Bicicleta para niños">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3>infantil</h3>
                             <p>Para niños de 6 a 10 años. Liviana, segura, con llantas auxiliares y frenos fáciles
                                 de usar para
@@ -220,13 +258,13 @@
                 <div class="col-md-3 border border-dark rounded-4">
                     <div class="card h-100">
                         <img src="./img/tad_av.jpeg" alt="Bicicleta Para dos personas">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3>Tandem</h3>
                             <p>Perfecta para dos personas; si te gusta hacer todo en pareja, esta es tu mejor
                                 eleccion, pedal
                                 sincronizado.</p>
                             <p>precio por hora <strong>20.000</strong></p>
-                            <a class="btn btn-success" href="../paginas/Reservas.html"
+                            <a class="btn btn-success " href="../paginas/Reservas.html"
                                 aria-label="reserva bicicleta Tadem Aventure">Reservar Ahora</a>
                         </div>
                     </div>
@@ -235,6 +273,8 @@
 
         </section>
 
+<!--------------------- Seccion para los recorridos guiados --------------------------------------->
+        
         <section class="mb-3">
             <div class="row mt-3">
                 <h2>Nuestras rutas</h2>
@@ -277,6 +317,9 @@
                     </div>
                 </div>
         </section>
+
+<!--------------------- Seccion de instrucciones, beneficios y contacto --------------------------------------->
+
         <section>
             <article>
                 <h2>¿Cómo alquilar? 🚴‍♂️</h2>
@@ -323,12 +366,14 @@
 
         <section class="mt-4" id="encuentranos">
             <h2>Encuéntranos</h2>
-            <p>Consulta nuestra ubicación exacta: <a href="https://maps.google.com" target="_blank">Ver ubicación en el
+            <p>Consulta nuestra ubicación exacta: <a href="https://maps.google.com" target="_blank" class="btn btn-outline btn-warning">Ver ubicación en el
                     mapa</a></p>
             <p>Escribenos a nuestro correo: <a href="mailto:hola@ruedalibre.example">hola@ruedalibre.example</a></p>
 
         </section>
     </main>
+
+<!--------------------- Seccion para boton flotante y footer --------------------------------------->
 
     <aside>
         <a href="https://wa.me/573113039685" target="_blank" class="whatsapp-flotante" aria-label="Contáctanos por WhatsApp">

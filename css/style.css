@@ -1,12 +1,19 @@
 :root {
     --fuente-titulos: "Montserrat", sans-serif;
     --fuente-texto: "Open Sans", sans-serif;
-    --bs-success: #1E7A4F;
+    --verde-ruta: #1E7A4F;
     --naranja-pedal: #F39A2B;
-    --azul-noche: #14213D;    
+    --azul-noche: #14213D;
     --crema: #FAF6EF;
-    --gris-asfalto: #5B6470;   
-
+    --gris-asfalto: #5B6470;
+    --bs-warning:var(--naranja-pedal);
+    --bs-warning-rgb: 243, 154, 43;
+}
+.btn-warning{
+    --bs-btn-bg: #F39A2B;
+    --bs-btn-border-color: #F39A2B;
+    --bs-btn-hover-bg: #d88321;
+    --bs-btn-hover-border-color: #c9791e;
 }
 *,
 *::before,
@@ -28,7 +35,10 @@ header .btn:hover {
     transform: scale(0.9);
     transition: 0.2s;
 }
-
+header img{
+    width: 25%;
+    height: auto;
+}
 .row{
     margin: 0.5rem;
     border-radius: 15%;
@@ -83,9 +93,6 @@ th, td {
     text-align: left;
 }
 
-
-
-
 /*=============== formulario ===============*/
 
 legend{
@@ -106,13 +113,8 @@ form div:has(input[type="radio"]){
     width: auto;
 }
 
-button{
-    padding: 1rem 2rem;
-    border: 1px solid;
-    border-radius: 4px;
-    cursor: pointer;
-    align-self: flex-start;
-}
+
+
 
 /* ============================== boton whatsapp flotante =================*/
 .whatsapp-flotante {
@@ -143,7 +145,4 @@ button{
 .btn:hover {
     background-color: var(--azul-noche);
 }
-.btn:focus {
-    outline: 3px solid var(--azul-noche);
-    outline-offset: 2px;
-}
+
