@@ -6,13 +6,24 @@
     --azul-noche: #14213D;
     --crema: #FAF6EF;
     --gris-asfalto: #5B6470;
-    --bs-warning:var(--naranja-pedal);
-    --bs-warning-rgb: 243, 154, 43;
+    
+    --bs-primary: var(--verde-ruta);
+    --bs-primary-rgb: 30, 122, 79;
+    --bs-secondary:var(--naranja-pedal);
+    --bs-secondary-rgb: 243, 154, 43;
 }
-.btn-warning{
+.btn-primary{
+    --bs-btn-bg: var(--verde-ruta);
+    --bs-btn-border-color: var(--verde-ruta);
+    --bs-btn-color: white;
+    --bs-btn-hover-bg: var(--azul-noche);
+    --bs-btn-hover-border-color: var(--verde-ruta);
+}
+.btn-secondary{
     --bs-btn-bg: #F39A2B;
+    --bs-btn-color: black;
     --bs-btn-border-color: #F39A2B;
-    --bs-btn-hover-bg: #d88321;
+    --bs-btn-hover-bg: var(--azul-noche);
     --bs-btn-hover-border-color: #c9791e;
 }
 *,
@@ -132,17 +143,16 @@ form div:has(input[type="radio"]){
 }
 .whatsapp-flotante i {
     font-size: 45px !important;
-    color: #dfe3e6 !important;
+    color: #f4f6f8 !important;
     line-height: 1;
     padding: 8px;
     position: relative;
     bottom: 2px;
+    
 }
 .whatsapp-flotante :hover{
     transform: scale(1.2);
 }
 /*========================= botones y enlaces =====================*/
-.btn:hover {
-    background-color: var(--azul-noche);
-}
+
 
