@@ -142,8 +142,8 @@ form div:has(input[type="radio"]){
     justify-content: center;    
 }
 .whatsapp-flotante i {
-    font-size: 45px !important;
-    color: #f4f6f8 !important;
+    font-size: 45px;
+    color: #f4f6f8;
     line-height: 1;
     padding: 8px;
     position: relative;
