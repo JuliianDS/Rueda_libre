@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre | Noturna</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <main>
-        <section class="container ms-auto px-4 grid grid-cols-1 md:grid-cols-12">
-            <div class="md:col-span-8 border">
-                <P>Nuevo: Jueves a sabado</P>
-                <p class="display-6">RUEDA NOCTURNA</p>
+    <header class="flex justify-end pr-5 py-3"><button class="border rounded-xl p-1 bg-red-500 hover:bg-red-900 text-white"><a href="../index.html">Rueda Libre</a></button></header>
+    <main class="container place-self-center p-0 mt-9 border rounded max-w-4xl">
+        <section class="container bg-white ms-auto px-10 pt-9 pb-5 mb-3 border-t border-t-30 border-[#5B6470] grid grid-cols-1 md:grid-cols-12">
+            <div class="md:col-span-7">
+                <P class="text-gray-700 my-6"><span class="bg-[#14213D] text-white text-3xl p-1  border rounded-lg fw-bold">Nuevo: Jueves a sabado</span></P>
+                <p class="text-7xl">RUEDA
+                    <br>NOCTURNA</p>
+                <p class="text-3xl text-gray-500">Descubre medellin en bici <br>cuando se encienden las luces</p>
+                
             </div >
-            <div class="md:col-span-4 flex justify-center border-5 border-gray-500 rounded ">
-                <img src="../img/cicla.jpeg" alt="" class="img-fluid rounded">
+            <div class="md:col-span-5 border rounded p-0">
+                <img src="../img/ele_urb.jpeg" alt="" class=" rounded border border-8 border-gray-500 w-full">
             </div>
         </section>
-        <button class="bg-gray-500 rounded-lg hover:bg-gray-800 flex m-4 p-4 text-white">hola mundoo</button>
+        <section class="container ms-auto px-4 mb-3  grid grid-cols-1 md:grid-cols-12">
+            <div class="md:col-span-5 border-2 mx-4 rounded">
+                
+                <div class="text-4xl flex p-5">
+                    <img src="./img/location.png" alt="" class="w-25">                    
+                    
+                    <pc class="px-4"><strong>3 Rutas</strong>
+                        <br><span class="text-2xl text-gray-700">por medellin</span></p>
+                </div>
+                
+            </div >
+            <div class="md:col-span-7 border-2 rounded ml-6 p-5 flex">
+                <img src="./img/pago.png" alt="" class="w-25">                          
+                <p class="text-4xl pl-4 "><strong>Desde $55.000</strong>
+                    <br><span class="text-2xl text-gray-700">Por persona</span></p>
+            </div>
+        </section>        
+        <div class="flex ml-6">                
+                <button class="bg-[#14213D] rounded-lg hover:bg-blue-900 flex m-4 px-6 py-3 text-white uppercase">inscribete</button>
+        </div>
+        
     </main>
 </body>
 </html>
